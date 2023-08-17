@@ -19,26 +19,22 @@ class ImageGalleryItem extends Component {
     document.documentElement.classList.add('active-modal');
     document.body.style.paddingRight = `${scrollBarWidth}px`;
   };
-
   handleClick = () => {
     const { onClick } = this.props;
 
     this.scrollLock();
     onClick();
   };
-
   handleLoad = () => {
     this.setState({ loaded: true });
   };
-
   handleError = () => {
     this.setState({ error: true });
   };
-
+  
   render() {
     const { src, largeSrc } = this.props;
     const { loaded, error } = this.state;
-    // onClick
     return (
       <>
         {error ? (

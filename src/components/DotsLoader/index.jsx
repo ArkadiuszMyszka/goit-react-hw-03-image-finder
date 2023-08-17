@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { PulseLoader } from 'react-spinners';
-
 import styles from './DotsLoader.module.css';
 
 class DotsLoader extends Component {
@@ -16,5 +15,4 @@ class DotsLoader extends Component {
     );
   }
 }
-
 export default DotsLoader;

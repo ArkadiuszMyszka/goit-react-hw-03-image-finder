@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-
 import styles from './Placeholder.module.css';
 
 export class Placeholder extends Component {
